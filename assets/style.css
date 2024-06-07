@@ -1,0 +1,106 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body.default {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+body.dark {
+    background-color: #333;
+    color: #0f0f0f;
+}
+
+body.light {
+    background-color: #fff;
+    color: #333;
+}
+
+body.red {
+    background-color: #c82424;
+    color: #660000;
+}
+
+body.blue {
+    background-color: #cceeff;
+    color: #003366;
+}
+
+body.green {
+    background-color: #ccffcc;
+    color: #176217;
+}
+
+body.orange {
+    background-color: #ff8710;
+    color: #ff8c00;
+}
+
+body.purple {
+    background-color: #e6ccff;
+    color: #9f73cb;
+}
+
+body.yellow {
+    background-color: #f6f100;
+    color: #e8e829;
+}
+
+h1 {
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 200px;
+}
+
+select:focus {
+    outline: none;
+    border-color: #666;
+}
+
+.theme-option {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.theme-option:hover {
+    transform: translateY(-3px);
+}
+
+.theme-option img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 90%;
+    }
+}
