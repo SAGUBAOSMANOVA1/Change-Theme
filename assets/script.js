@@ -3,7 +3,7 @@ document.getElementById('theme-select').addEventListener('change', function() {
     document.body.className = theme;
     localStorage.setItem('theme', theme);
 
-    // Temaya göre kalp simgesinin rengini güncelle
+   
     var heart = document.getElementById('heart-icon');
     if (theme === 'default') {
         heart.innerHTML = '❤️';
@@ -26,14 +26,14 @@ document.getElementById('theme-select').addEventListener('change', function() {
     }
 });
 
-// Sayfa yüklendiğinde tema yüklemek için localStorage kontrolü
+
 window.onload = function() {
     var savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
         document.body.className = savedTheme;
         document.getElementById('theme-select').value = savedTheme;
 
-        // Sayfa yüklendiğinde kalp simgesinin rengini de güncelle
+        
         var heart = document.getElementById('heart-icon');
         if (savedTheme === 'default') {
             heart.innerHTML = '🤍';
